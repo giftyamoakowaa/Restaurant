@@ -268,9 +268,9 @@ background-color: #f1f1f1;
   /* position: relative; Ensure grid container is relative */
 }
 .grid-container img {
-  /* width: 100%;
+  width: 100%;
   height: 100%;
-  object-fit: cover; */
+  object-fit: cover;
   border-radius: 10px;
   transition: transform 0.4s; /* Add the transition */
 }
@@ -284,12 +284,12 @@ background-color: #f1f1f1;
   position: relative; /* Position child elements relative to this */
 
 }
-.grid-container img {
+/* .grid-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
+} */
 
 .group1 {
   grid-row: span 2;
@@ -415,3 +415,87 @@ width: 300px;
 height: 40px;
 border-radius: 10px;
 }
+/* Footer section */
+h4 {
+  margin: 0 0 20px 0; /* Increase space between header and content */
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.bg1 {
+  background-color: #222222;
+  padding: 60px 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-section, .latest-twitter-section, .gallery-section {
+  flex: 1 1 calc(33.33% - 30px); /* Adjust width for better layout */
+  margin: 15px;
+}
+
+.contact {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px; /* Increase space between heading and content */
+}
+
+.contlist {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.contact-section ul li:nth-child(3) {
+  margin-bottom: 30px; /* Increase space between contact content and opening times header */
+}
+
+.tweet {
+  margin-right: 5px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.tweet + span, .tweet + a {
+  margin-left: 5px; /* Add space after tweet icon */
+}
+
+.grid {
+  display: grid;
+  height: 90%;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  column-gap: -15px; /* Reduce the column gap between images */
+  row-gap: 1px; /* Adjust the row gap */
+  background-color: white;
+}
+
+.grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
